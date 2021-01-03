@@ -38,7 +38,7 @@ class TechBorder3Painter extends CustomPainter {
     var paint = Paint()
       ..color = borderColor
       ..strokeWidth = borderWidth
-      ..strokeCap = StrokeCap.square;
+      ..strokeCap = StrokeCap.round;
 
     /// paint left border
     var leftTopBorder = Offset(padding, cornerWidth);
@@ -75,7 +75,7 @@ class TechBorder3Painter extends CustomPainter {
     paint = Paint()
       ..color = borderColor
       ..strokeWidth = borderWidth / 4
-      ..strokeCap = StrokeCap.square;
+      ..strokeCap = StrokeCap.round;
 
     /// paint top left corver border
     var topLeftBottom = Offset(0, cornerWidth);

@@ -29,7 +29,7 @@ class TechBorder1Painter extends CustomPainter {
   void paint(Canvas canvas, Size size) {
     final width = size.width;
     final height = size.height;
-    final double cornerWidth = width >= 8 ? 8 : 0;
+    final double cornerWidth = 8;
 
     final paint = Paint()
       ..color = borderColor

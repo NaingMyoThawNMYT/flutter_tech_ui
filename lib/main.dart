@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'custom_border_painters/tech_border_1_painter.dart';
 import 'custom_border_painters/tech_border_2_painter.dart';
+import 'custom_border_painters/tech_border_3_painter.dart';
 
 void main() {
   runApp(MyApp());
@@ -42,6 +43,11 @@ class MyHomePage extends StatelessWidget {
                   padding: EdgeInsets.all(16),
                   child: Text('Tech UI'),
                 ).addTechBorder2(),
+                SizedBox(height: 16),
+                Padding(
+                  padding: EdgeInsets.all(32),
+                  child: Text('Tech UI'),
+                ).addTechBorder3(),
               ],
             ),
           ),

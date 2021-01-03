@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'custom_border_painters/tech_border_1_painter.dart';
+import 'custom_border_painters/tech_border_2_painter.dart';
 
 void main() {
   runApp(MyApp());
@@ -25,11 +26,26 @@ class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: Container(
+      body: SafeArea(
+        child: SingleChildScrollView(
           padding: EdgeInsets.all(16),
-          child: Text('Tech UI'),
-        ).addTechBorder1(borderColor: Colors.orange),
+          child: Container(
+            width: double.infinity,
+            child: Column(
+              children: [
+                Padding(
+                  padding: EdgeInsets.all(16),
+                  child: Text('Tech UI'),
+                ).addTechBorder1(),
+                SizedBox(height: 16),
+                Padding(
+                  padding: EdgeInsets.all(16),
+                  child: Text('Tech UI'),
+                ).addTechBorder2(),
+              ],
+            ),
+          ),
+        ),
       ),
     );
   }
